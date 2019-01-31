@@ -389,30 +389,44 @@ input[type="search"]::-webkit-search-decoration {
  * Heading 1
  */
 h1 {
-  font-size: 3rem;
-  line-height: 1.2; }
+  font-size: 32px;
+}
 
 /**
  * Heading 2
  */
 h2 {
-  line-height: 1.2; }
+  font-size: 29px;
+}
 
 /**
  * Heading 3
  */
 h3 {
-  line-height: 1.2; }
+  font-size: 26px;
+}
 
 /**
  * Heading 4
  */
+h4 {
+  font-size: 23px;
+}
+
 /**
  * Heading 5
  */
+h5 {
+  font-size: 20px;
+}
+
 /**
  * Heading 6
  */
+h6 {
+  font-size: 18px;
+}
+
 /**
  * Subheading
  */
@@ -564,6 +578,7 @@ td {
  * Paragraph base styles
  */
 p {
+  font-size: 14px;
   margin-bottom: 1em; }
 
 /**
