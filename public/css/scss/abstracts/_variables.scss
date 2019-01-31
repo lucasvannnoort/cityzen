@@ -1,10 +1,8 @@
 /*------------------------------------*\
     #VARIABLES
 \*------------------------------------*/
-
-
-
-
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Noticia+Text');
 
 /*------------------------------------*\
     #COLORS
@@ -103,8 +101,8 @@ $color-border: $color-gray-50;
     #TYPOGRAPHY
 \*------------------------------------*/
 
-$font : "HelveticaNeue", "Helvetica", "Arial", sans-serif;
-$font-secondary : Georgia, Times, "Times New Roman", serif;
+$font : "Noticia Text", "Helvetica", "Arial", sans-serif;
+$font-secondary : "Quicksand", Times, "Times New Roman", serif;
 
 $font-size-small : 0.75rem;
 $font-size-small-2 : 0.875rem;
