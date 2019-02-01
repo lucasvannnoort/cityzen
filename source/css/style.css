@@ -97,7 +97,10 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
  *    first tier defines the brand and neutral colors, and the second tier
  *    defines the application of those colors.
  */
-/*
+
+
+ :root {
+  /*
  * Brand Colors
  * 1) Brand color variables use English names to define colors to make palettes easier to
  *    identify. Names are generated using this tool: http://chir.ag/projects/name-that-color/
@@ -105,23 +108,22 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
  *    second-tier application colors.
  *
  */
-/*
+  --interface-1 : #FF6565;
+  --interface-2 : #D27FFF;
+  --interface-3 : #FFFFFF;
+
+  /*
+ * Heading Colors
+ * 1) These are non-linked heading colors, such as h2, h3, etc.
+ */
+  --footer: #ECECEC;
+
+  /*
  * Neutral Colors
  * 1) Neutral color variables use a numbered system to define variables for better maintainability.
  *    "$color-gray-10" means "10% gray", which is a gray closer to white than to black. For more info
  *    read https://medium.com/eightshapes-llc/color-in-design-systems-a1c80f65fa3#.brevrq67p
  */
-
-/**
- * Utility Colors
- * 1) Utility colors are colors used to provide feedback, such as alert messages,
- * form validation, etc.
- */
- :root {
-  --interface-1 : #FF6565;
-  --interface-2 : #D27FFF;
-  --interface-3 : #FFFFFF;
-
   --declinaison-1 : #FF6565;
   --declinaison-2 : #7F3232;
   --declinaison-3 : #E55B5B;
@@ -129,31 +131,38 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
   --declinaison-5 : #693F7F;
   --declinaison-6 : #BD72E5;
 
+  /*
+ * Text Colors
+ * 1) These are non-linked text colors, such as body copy.
+ */
+  --text1 : #181818;
+  --text2 : #FF6565;
+
+/*
+ * Text Link Colors
+ * 1) These are for linked text, such as a link found within an article,
+ *    navigation link, footer link, etc.
+ */
+ --link: #CEB5DB;
+
+/**
+ * Utility Colors
+ * 1) Utility colors are colors used to provide feedback, such as alert messages,
+ * form validation, etc.
+ */
   --interaction-valide : #2DFF00;
   --interaction-erreur : #FF0C00;
   --interaction-desactive : grey;
   --interaction-default : #D27FFF;
 
  }
- 
-/*
- * Text Colors
- * 1) These are non-linked text colors, such as body copy.
- */
-/*
- * Heading Colors
- * 1) These are non-linked heading colors, such as h2, h3, etc.
- */
-/*
- * Text Link Colors
- * 1) These are for linked text, such as a link found within an article,
- *    navigation link, footer link, etc.
- */
-/*
+ /*
  * Border Colors
  * 1) Border colors are used as decoration or dividers, such as as a seperator
  *    for navigation items, block borders, etc.
  */
+
+ --border1 : ;
 /*------------------------------------*\
     #TYPOGRAPHY
 \*------------------------------------*/
@@ -685,7 +694,7 @@ abbr {
   display: flex;
   transition: all 0.2s ease; }
   .c-block-media:hover .c-block-media__headline, .c-block-media:focus .c-block-media__headline {
-    color: #5C832F; }
+    color: var(--text2); }
   .c-block-media--small {
     font-size: 0.875rem; }
 
@@ -949,8 +958,8 @@ abbr {
 .c-footer {
   clear: both;
   overflow: hidden;
-  background: #3b4a20;
-  color: #fff;
+  background: var(--footer);
+  color: rgb(0, 0, 0);
   line-height: 1.2;
   padding: 1em 0; }
 
@@ -960,7 +969,7 @@ abbr {
 .c-footer__info {
   max-width: 40em; }
   .c-footer__info a {
-    color: #d9d9d9;
+    color:var(--link);
     text-decoration: underline; }
     .c-footer__info a:hover, .c-footer__info a:focus {
       text-decoration: none; }
@@ -1001,7 +1010,7 @@ abbr {
   font-weight: bold;
   display: block;
   padding: 1rem 2rem 1rem 0;
-  color: #fff; }
+  color: var(--interface-3); }
   .c-footer-nav__link:hover, .c-footer-nav__link:focus {
     color: #a5a5a5; }
 
@@ -1021,7 +1030,7 @@ abbr {
     width: 100%;
     padding: 1em;
     box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, 0.2);
-    background: #fff;
+    background:var(--interface-3);
     z-index: 1; }
   @media all and (min-width: 29.75em) {
     .c-search-form {
