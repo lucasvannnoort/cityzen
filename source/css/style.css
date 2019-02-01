@@ -111,11 +111,31 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
  *    "$color-gray-10" means "10% gray", which is a gray closer to white than to black. For more info
  *    read https://medium.com/eightshapes-llc/color-in-design-systems-a1c80f65fa3#.brevrq67p
  */
+
 /**
  * Utility Colors
  * 1) Utility colors are colors used to provide feedback, such as alert messages,
  * form validation, etc.
  */
+ :root {
+  --interface-1 : #FF6565;
+  --interface-2 : #D27FFF;
+  --interface-3 : #FFFFFF;
+
+  --declinaison-1 : #FF6565;
+  --declinaison-2 : #7F3232;
+  --declinaison-3 : #E55B5B;
+  --declinaison-4 : #D27FFF;
+  --declinaison-5 : #693F7F;
+  --declinaison-6 : #BD72E5;
+
+  --interaction-valide : #2DFF00;
+  --interaction-erreur : #FF0C00;
+  --interaction-desactive : grey;
+  --interaction-default : #D27FFF;
+
+ }
+ 
 /*
  * Text Colors
  * 1) These are non-linked text colors, such as body copy.
