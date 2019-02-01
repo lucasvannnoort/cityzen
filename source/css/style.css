@@ -219,7 +219,7 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 
 body {
   background: #fff;
-  color: #808080;
+  color: #000;
   font: 100%/1.5 "Noticia Text", "Arial", sans-serif;
   -webkit-text-size-adjust: 100%;
   min-height: 100vh;
@@ -426,42 +426,42 @@ input[type="search"]::-webkit-search-decoration {
  * Heading 1
  */
 h1 {
-  font-size: 32px;
+  font-size: 46px;
 }
 
 /**
  * Heading 2
  */
 h2 {
-  font-size: 29px;
+  font-size: 36px;
 }
 
 /**
  * Heading 3
  */
 h3 {
-  font-size: 26px;
+  font-size: 28px;
 }
 
 /**
  * Heading 4
  */
 h4 {
-  font-size: 23px;
+  font-size: 22px;
 }
 
 /**
  * Heading 5
  */
 h5 {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 /**
  * Heading 6
  */
 h6 {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /**
@@ -615,7 +615,7 @@ td {
  * Paragraph base styles
  */
 p {
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 1em; }
 
 /**
@@ -842,25 +842,43 @@ abbr {
  * Button
  */
 .c-btn {
+  text-decoration: none;
+  text-transform: capitalize;
   display: inline-block;
-  background: #3b4a20;
-  color: #fff;
-  line-height: 1;
-  font-weight: bold;
-  padding: 1rem 2rem;
-  border: 0;
-  border-radius: 6px;
-  text-align: center;
-  transition: background 0.2s ease;
-  /**
-   * Disabled button
-   */ }
-  .c-btn:hover, .c-btn:focus {
-    background: #5C832F;
-    color: #fff; }
-  .c-btn.disabled {
-    background: #d9d9d9;
-    color: #808080; }
+  background: var(--interface-2);
+  padding: 10px 60px;
+  color: white;
+  border: none;
+  margin-left: 6px;
+  box-shadow: -6px 6px var(--interface-1);
+  transition: all .3s ease-in-out;
+}
+
+.c-btn:hover, .c-btn:active {
+  background: var(--interface-1);
+  box-shadow: 6px -6px var(--interface-2);
+}
+
+.c-btn:focus {
+  background: var(--interface-2);
+  box-shadow: 2px -4px var(--interface-1);
+  }  
+
+/**
+  * Disabled button
+  */
+.c-btn:disabled {
+  background: #CCC;
+  box-shadow: -6px 6px #444;
+  color: #181818;
+  cursor: not-allowed;
+  transition: all .3s ease-in-out;
+}
+
+.c-btn:disabled:hover{
+  background: #CCC;
+  box-shadow: 6px -6px #444;
+}
 
 /**
  * Small button
