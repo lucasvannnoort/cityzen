@@ -667,7 +667,7 @@ abbr {
  * 1) This sits overtop of the hero image when space permits
  */
 .c-block-hero__headline {
-  background: rgba(0, 0, 0, 0.5);
+  background:var(--interface-3));
   color: #fff;
   padding: 1rem;
   font-size: 2.6rem;
@@ -719,7 +719,7 @@ abbr {
 
 .c-block-media__headline {
   margin-bottom: 0.2em;
-  color: #595959;
+  color: var(--text2);
   transition: all 0.2s ease; }
   .c-block-media--small .c-block-media__headline {
     font-size: 1rem; }
@@ -731,7 +731,7 @@ abbr {
   flex: 1; }
 
 .c-block-media__excerpt {
-  color: #a5a5a5;
+  color:var(--text1);
   transition: all 0.2s ease; }
   .c-block-media--small .c-block-media__excerpt {
     margin-bottom: 0;
@@ -1029,7 +1029,7 @@ abbr {
     right: 2px;
     width: 100%;
     padding: 1em;
-    box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 5px -2px var(--interface-3);
     background:var(--interface-3);
     z-index: 1; }
   @media all and (min-width: 29.75em) {
