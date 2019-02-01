@@ -92,6 +92,37 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 /*------------------------------------*\
     #COLORS
 \*------------------------------------*/
+:root {
+
+  --interface-1 : #FF6565;
+  --interface-2 : #D27FFF;
+  --interface-3 : #FFFFFF;
+
+  --footer: #ECECEC;
+
+  --declinaison-1 : #FF6565;
+  --declinaison-2 : #7F3232;
+  --declinaison-3 : #E55B5B;
+  --declinaison-4 : #D27FFF;
+  --declinaison-5 : #693F7F;
+  --declinaison-6 : #BD72E5;
+
+  --text1 : #181818;
+  --text2 : #FF6565;
+
+ --link: #CEB5DB;
+
+  --interaction-valide : #2DFF00;
+  --interaction-erreur : #FF0C00;
+  --interaction-desactive : grey;
+  --interaction-default : #D27FFF;
+
+ }
+ /*
+ * Border Colors
+ * 1) Border colors are used as decoration or dividers, such as as a seperator
+ *    for navigation items, block borders, etc.
+ */
 /*
  * 1) Color variables involve a two-tier system to keep colors in sync. The
  *    first tier defines the brand and neutral colors, and the second tier
@@ -117,25 +148,6 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
  * 1) Utility colors are colors used to provide feedback, such as alert messages,
  * form validation, etc.
  */
- :root {
-  --interface-1 : #FF6565;
-  --interface-2 : #D27FFF;
-  --interface-3 : #FFFFFF;
-
-  --declinaison-1 : #FF6565;
-  --declinaison-2 : #7F3232;
-  --declinaison-3 : #E55B5B;
-  --declinaison-4 : #D27FFF;
-  --declinaison-5 : #693F7F;
-  --declinaison-6 : #BD72E5;
-
-  --interaction-valide : #2DFF00;
-  --interaction-erreur : #FF0C00;
-  --interaction-desactive : grey;
-  --interaction-default : #D27FFF;
-
- }
- 
 /*
  * Text Colors
  * 1) These are non-linked text colors, such as body copy.
@@ -723,7 +735,7 @@ abbr {
   display: flex;
   transition: all 0.2s ease; }
   .c-block-media:hover .c-block-media__headline, .c-block-media:focus .c-block-media__headline {
-    color: #5C832F; }
+    color:var (var(--text2)) }
   .c-block-media--small {
     font-size: 0.875rem; }
 
@@ -748,7 +760,7 @@ abbr {
 
 .c-block-media__headline {
   margin-bottom: 0.2em;
-  color: #595959;
+  color: var(--text2);
   transition: all 0.2s ease; }
   .c-block-media--small .c-block-media__headline {
     font-size: 1rem; }
@@ -760,7 +772,7 @@ abbr {
   flex: 1; }
 
 .c-block-media__excerpt {
-  color: #a5a5a5;
+  color:var(--text1);
   transition: all 0.2s ease; }
   .c-block-media--small .c-block-media__excerpt {
     margin-bottom: 0;
@@ -1005,8 +1017,8 @@ abbr {
 .c-footer {
   clear: both;
   overflow: hidden;
-  background: #3b4a20;
-  color: #fff;
+  background:var(--footer);
+  color:var(--text1);
   line-height: 1.2;
   padding: 1em 0; }
 
@@ -1016,7 +1028,7 @@ abbr {
 .c-footer__info {
   max-width: 40em; }
   .c-footer__info a {
-    color: #d9d9d9;
+    color:var(--link);
     text-decoration: underline; }
     .c-footer__info a:hover, .c-footer__info a:focus {
       text-decoration: none; }
@@ -1057,9 +1069,9 @@ abbr {
   font-weight: bold;
   display: block;
   padding: 1rem 2rem 1rem 0;
-  color: #fff; }
+  color:var(--text1); }
   .c-footer-nav__link:hover, .c-footer-nav__link:focus {
-    color: #a5a5a5; }
+    color: var(--text1); }
 
 /*------------------------------------*\
     #FORMS
